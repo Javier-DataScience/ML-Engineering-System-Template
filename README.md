@@ -150,14 +150,35 @@ The training pipeline is designed to be **fully reproducible and configuration-d
 
 ---
 
-📒 Notebook Layer (Experimentation Only)
+## 📒 Notebook Layer (Experimentation Only)
 
-Used for:
+The notebook layer is used strictly for **controlled experimentation, validation, and debugging support**, not for production logic.
 
-Data exploration (EDA)
-Model sanity checks
-Validation of predictions
-Debugging pipelines
+### 🧩 Allowed Use Cases
+
+- Data exploration (EDA)
+- Model sanity checks
+- Validation of predictions
+- Debugging pipeline behavior
+- Cross-checking training results
+
+---
+
+### 🧠 Critical Design Rule
+
+All notebook evaluations must use the **same preprocessing, model loading, and inference logic as the production system**.
+
+This ensures:
+
+- Consistency between training, inference, and evaluation results  
+- No divergence between notebook metrics and production metrics  
+- No duplicated or modified logic inside notebooks  
+- Reliable verification of model performance  
+
+---
+
+### 📁 Notebook Structure
+
 
 ```
 notebooks/
