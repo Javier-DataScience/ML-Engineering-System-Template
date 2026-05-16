@@ -1,8 +1,10 @@
-# Machine Learning Engineering System
+# ML Engineering System Template
 
-## 🏗️ Architecture Diagram
+![Architecture](architecture.png)
 
-![ML System Architecture](architecture.png)
+A reusable, production-oriented Machine Learning Engineering template for building scalable end-to-end ML systems (Computer Vision, NLP, tabular, and more).
+
+Designed to standardize ML workflows from experimentation → training → deployment using a modular, config-driven, MLOps-ready architecture.
 
 ## 🚀 Project Overview
 
@@ -14,6 +16,19 @@ This project implements a **modular Machine Learning Engineering system** design
 - Structured using MLOps best practices
 
 The system evolves through a **single reusable architecture template (V1 → V3)**, ensuring scalability without redesigning the core system for every new project.
+
+---
+
+## 🧠 Why this matters
+
+Most ML projects fail to separate experimentation from production.
+
+This template solves that by enforcing:
+
+- Clear separation of training vs inference
+- Configuration-driven workflows (no hardcoding)
+- Reproducible ML pipelines
+- Scalable architecture from local → cloud
 
 ---
 ## 🎯 Project Purpose
