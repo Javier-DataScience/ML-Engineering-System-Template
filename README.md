@@ -1,5 +1,9 @@
 # Machine Learning Engineering System
 
+## 🏗️ Architecture Diagram
+
+![ML System Architecture](architecture.png)
+
 ## 🚀 Project Overview
 
 This project implements a **modular Machine Learning Engineering system** designed to be:
@@ -473,6 +477,3 @@ https://github.com/Javier-DataScience
 
 ---
 
-## 🏗️ Architecture Diagram
-
-![ML System Architecture](architecture.png)
