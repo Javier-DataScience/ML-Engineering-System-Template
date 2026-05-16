@@ -1,4 +1,4 @@
-# CIFAR-10 Machine Learning Engineering System
+# Machine Learning Engineering System
 
 ## 🚀 Project Overview
 
@@ -33,6 +33,18 @@ This project is built on a **single evolving architecture template**, where the 
 - **V1 → Core ML System (foundation):** modular training, inference, and model registry  
 - **V2 → MLOps layer:** automation, experiment tracking, and CI/CD integration  
 - **V3 → Enterprise + cloud-scale system:** containerization, orchestration, and distributed deployment  
+
+---
+
+## 🧠 Core System Principles 
+
+This system enforces strict separation of concerns:
+
+- Training ≠ Inference
+- Registry ≠ Runtime system
+- Notebooks ≠ Production code
+- UI ≠ ML logic
+- MLflow ≠ Inference dependency
 
 ---
 
@@ -86,12 +98,13 @@ The system follows a **modular pipeline architecture**, separating experimentati
 
 ## ⚙️ Configuration System
 
-The entire system is **fully driven by a centralized YAML configuration file**, designed as a **reusable schema** rather than a fixed configuration.  
-This ensures that the same architecture can be applied across different ML projects (CV, NLP, tabular) without modifying core code.
+The entire system is fully driven by a centralized YAML configuration file, designed as a **reusable schema rather than a fixed configuration**.
+
+This ensures that the same architecture can be applied across different ML domains (Computer Vision, NLP, tabular ML) without modifying core code.
 
 ```yaml
 model:
-  name: CNNv6  # Example only (varies per project)
+  name: Model_v1  # Example only (varies per project: Model_v1, Model_v2, etc.)
 
 training:
   batch_size: 64
@@ -99,7 +112,7 @@ training:
   learning_rate: 0.001
 
 data:
-  dataset: CIFAR-10  # Example dataset (project-dependent)
+  dataset: dataset_name  # Example only (project-dependent)
   split: [0.7, 0.15, 0.15]
 
 paths:
@@ -435,6 +448,8 @@ The system is built using a modern Machine Learning Engineering stack designed f
 
 ---
 
+
+
 ## 📌 Summary
 
 This project defines a **production-style Machine Learning Engineering system template** designed for long-term reuse across NLP, Computer Vision, and cloud-based ML applications.
@@ -443,26 +458,21 @@ It provides a **modular and configuration-driven architecture** that scales from
 
 ---
 
+## 👤 Author
 
+**Alvaro Vega**  
+Machine Learning Engineer (Aspiring) | AI Systems Designer | NLP & LLM Engineering Learner  
 
----
+### 🧠 Project Context
 
+This repository is part of a structured learning path focused on building **production-grade Machine Learning Engineering systems**, including modular ML architecture, MLOps practices, and cloud deployment readiness.
 
+### 🔗 GitHub
 
----
-
-
-
----
-
-
-
----
-
-
+https://github.com/Javier-DataScience
 
 ---
 
+## 🏗️ Architecture Diagram
 
-
----
+![ML System Architecture](architecture.png)
