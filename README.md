@@ -4526,7 +4526,7 @@ This project is part of a broader roadmap to evolve into:
 
 Machine Learning Engineer Practitioner
 AI Systems Designer  
-Cloud & MLOps Enthusiast  
+Cloud & MLOps 
 
 ---
 
